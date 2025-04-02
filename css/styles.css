@@ -1,0 +1,43 @@
+/* Custom Styles for Leuko Stopper Landing Page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav ul li {
+    list-style: none;
+}
+
+
+/* Smooth Fade-In Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section div {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
